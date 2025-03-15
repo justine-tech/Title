@@ -1,0 +1,212 @@
+body {
+    background: rgb(133, 65, 65);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Courier New';
+    margin: 0; /* Remove default body margin */
+}
+
+button {
+    cursor: pointer;
+    padding: 10px 8px;
+    border-radius: 10px;
+    border: 2px solid black;
+    animation: 2s lilipad ease-in;
+    box-shadow: 6px 3px 5px 5px black;
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+}
+
+@keyframes lilipad {
+    0% {
+        transform: translateY(-300px);
+        border: none;
+        box-shadow: none;
+        color: white;
+        background: white;
+    }
+    30% {
+        transform: translateX(100px);
+        border: none;
+        box-shadow: none;
+        color: white;
+        background: white;
+    }
+    50% {
+        transform: translateX(-400px);
+        border: none;
+        box-shadow: none;
+        color: white;
+        background: white;
+    }
+    70% {
+        transform: translateY(-100px);
+        border: none;
+        box-shadow: none;
+        color: white;
+        background: white;
+    }
+}
+
+.greet {
+    animation: 2.5s pagbati steps(20, end);
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.greetf {
+    animation: 2s pagbati steps(20, end) infinite;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+@keyframes pagbati {
+    from {
+        width: 0;
+    }
+    to {
+        width: 290px;
+    }
+}
+
+.main {
+    border: 2px solid black;
+    width: 80%; /* Change to relative width */
+    max-width: 300px; /* Set a maximum width */
+    display: inline-block;
+    margin: 0;
+    text-align: center;
+    box-shadow: 5px 5px 5px 5px black;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    border-radius: 10px;
+    background: rgb(124, 76, 76);
+}
+
+#fafa,
+#fafafa {
+    animation: none;
+    padding: 5px 3px;
+    display: none;
+}
+#fafa{
+    animation: 3s tinaas ease-in;
+}
+@keyframes tinaas {
+    0%{
+        transform: translateY(500px);
+    }
+}
+video {
+    display: none;
+}
+#kiki{
+    animation: 4s lilipadf ease-in-out;
+    display: inline-block;
+    margin: 0px 10px;
+    font-size: 35px;
+}
+@keyframes lilipadf {
+    0% {
+        transform: translateY(-300px);
+        border: none;
+        box-shadow: none;
+        color: white;
+        font-size: 20px;
+    }
+    30% {
+        transform: translateX(100px);
+        border: none;
+        box-shadow: none;
+        color: white;
+        font-size: 20px;
+    }
+    50% {
+        transform: translateX(-400px);
+        border: none;
+        box-shadow: none;
+        color: white;
+        font-size: 23px;
+    }
+    70% {
+        transform: translateY(-100px);
+        border: none;
+        box-shadow: none;
+        color: white;
+        font-size: 28px;
+    }
+}
+p{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.main2 {
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px 5px black;
+    margin-bottom: 10px;
+    padding: 10px 0px;
+    border: 2px solid black;
+    width: 80%; /* Change to relative width */
+    max-width: 700px; /* Set a maximum width */
+    display: inline-block;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    display: none;
+    border-radius: 10px;
+    background: rgb(197, 162, 162);
+    color: rgb(85, 58, 58);
+    font-family: 'Courier New', Courier, monospace;
+    animation: 3s binaba ease-in;
+}
+@keyframes binaba {
+    0%{
+        transform: translateY(-400px);
+    }
+}
+
+#fabs {
+    animation: 1.6s tibok infinite;
+}
+
+@keyframes tibok {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media only screen and (max-width: 414px) { /* Target iPhone 11 Pro Max and smaller devices */
+    button {
+        font-size: 14px; /* Adjust button font size */
+        padding: 8px 6px; /* Adjust padding */
+    }
+
+    .main,
+    .main2 {
+        width: 90%; /* Full width of the screen for smaller devices */
+        max-width: none; /* Remove max width for smaller devices */
+    }
+
+    .greet,
+    .greetf {
+        width: 100%; /* Make greeting elements responsive */
+    }
+}
+button{
+    background: rgb(122, 86, 86);
+    color: white;
+}
